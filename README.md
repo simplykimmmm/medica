@@ -119,6 +119,9 @@ Markdown files can also use frontmatter with the same keys.
 ## Deploying later on Vercel
 
 - Import the repo into Vercel.
+- Keep the framework preset as `Next.js`.
+- Use `npm install` as the install command and `npm run build` as the build command.
+- Leave the output directory blank. This app is not a static export and does not build to `public`.
 - Add the same env vars there.
 - Keep `training-data/` in your project or connect a storage/database ingestion layer later if the corpus grows large.
 
