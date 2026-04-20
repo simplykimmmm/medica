@@ -1,0 +1,555 @@
+[
+  {
+    "id": "hyperemesis-gravidarum",
+    "title": "Hyperemesis gravidarum",
+    "category": "Obstetric medicine",
+    "summary": "A severe form of nausea and vomiting in pregnancy that usually begins in the first trimester and can lead to dehydration, weight loss, electrolyte problems, and inability to keep down food or fluids.",
+    "keywords": ["hyperemesis gravidarum", "severe vomiting", "dehydration", "ketones", "unable to keep fluids down", "pregnancy nausea", "weight loss"],
+    "symptomPatterns": [
+      "Vomiting many times per day or persistent retching",
+      "Inability to keep down fluids or food",
+      "Dizziness, weakness, low urine output, dark urine, or signs of dehydration",
+      "Weight loss or rapid worsening beyond typical morning sickness"
+    ],
+    "typicalTiming": [
+      "Often starts around 4 to 7 weeks",
+      "Usually improves by 12 to 20 weeks but may last longer",
+      "Needs urgent assessment when dehydration or reduced urine output develops"
+    ],
+    "dangerSignals": [
+      "Cannot keep fluids down",
+      "Minimal urination",
+      "Fainting or near-fainting",
+      "Confusion",
+      "Vomiting blood",
+      "Severe weakness"
+    ],
+    "differentiators": [
+      "Typical nausea and vomiting in pregnancy usually still allows some oral intake",
+      "Hyperemesis gravidarum is more severe, often with dehydration and functional decline",
+      "Consider molar pregnancy, multiple gestation, thyroid disease, or infection if course is atypical"
+    ],
+    "suggestedWorkup": [
+      "Vitals and hydration status",
+      "Urine ketones and urinalysis",
+      "Electrolytes, renal function, and weight trend",
+      "Consider ultrasound if diagnosis is uncertain or symptoms are unusually severe"
+    ],
+    "carePath": [
+      "Same-day assessment if fluids cannot be kept down",
+      "Hospital treatment may be needed for IV fluids, antiemetics, and electrolyte replacement",
+      "Review medication safety in pregnancy with a clinician"
+    ],
+    "pregnancyImpact": [
+      "Severe dehydration and malnutrition can affect maternal health",
+      "Early treatment helps prevent complications and repeated hospital visits"
+    ],
+    "citations": [
+      {
+        "title": "Severe vomiting in pregnancy",
+        "url": "https://www.nhs.uk/pregnancy/related-conditions/complications/severe-vomiting/",
+        "publisher": "NHS"
+      },
+      {
+        "title": "Hyperemesis gravidarum overview",
+        "url": "https://www.guysandstthomas.nhs.uk/health-information/hyperemesis-gravidarum",
+        "publisher": "Guy's and St Thomas' NHS Foundation Trust"
+      }
+    ]
+  },
+  {
+    "id": "preeclampsia-hellp-spectrum",
+    "title": "Preeclampsia, eclampsia, and HELLP spectrum",
+    "category": "Hypertensive disorders",
+    "summary": "Pregnancy-related hypertension after 20 weeks can progress to organ injury, seizures, stroke, liver complications, placental problems, and fetal compromise. Headache, vision change, right upper abdominal pain, shortness of breath, or major swelling make this especially urgent.",
+    "keywords": ["preeclampsia", "HELLP", "high blood pressure", "headache", "vision changes", "right upper quadrant pain", "proteinuria", "seizure"],
+    "symptomPatterns": [
+      "Blood pressure elevation after 20 weeks of pregnancy",
+      "Severe or persistent headache",
+      "Blurred vision, flashing lights, or other visual symptoms",
+      "Right upper abdominal or epigastric pain, nausea, or vomiting",
+      "Shortness of breath or sudden swelling of face and hands"
+    ],
+    "typicalTiming": [
+      "Usually after 20 weeks of pregnancy",
+      "Can also present postpartum",
+      "HELLP can present abruptly and sometimes without classic findings"
+    ],
+    "dangerSignals": [
+      "Severe headache",
+      "Vision changes",
+      "Seizure",
+      "Markedly elevated blood pressure",
+      "Right upper abdominal pain",
+      "Shortness of breath",
+      "Reduced urination"
+    ],
+    "differentiators": [
+      "Gestational hypertension lacks the broader organ-injury pattern of preeclampsia",
+      "HELLP may include abdominal pain, nausea, bruising, and lab abnormalities even before obvious hypertension is recognized",
+      "AFLP can overlap with nausea, abdominal pain, jaundice, and liver dysfunction"
+    ],
+    "suggestedWorkup": [
+      "Repeat blood pressure measurement",
+      "Urine protein assessment",
+      "CBC with platelets",
+      "Creatinine and liver enzymes",
+      "Fetal assessment and obstetric review"
+    ],
+    "carePath": [
+      "Urgent or emergent obstetric evaluation is appropriate for suspected preeclampsia with symptoms",
+      "Seizure, severe hypertension, or breathing difficulty requires emergency care now",
+      "Do not rely on symptom monitoring alone when red flags are present"
+    ],
+    "pregnancyImpact": [
+      "Can reduce blood supply to the fetus",
+      "Increases risk for seizure, stroke, liver injury, placental abruption, and maternal-fetal morbidity"
+    ],
+    "citations": [
+      {
+        "title": "What are the symptoms of preeclampsia, eclampsia, & HELLP syndrome?",
+        "url": "https://www.nichd.nih.gov/health/topics/preeclampsia/conditioninfo/symptoms",
+        "publisher": "NICHD"
+      },
+      {
+        "title": "Preeclampsia and eclampsia fact sheet",
+        "url": "https://www.nichd.nih.gov/health/topics/factsheets/preeclampsia",
+        "publisher": "NICHD"
+      }
+    ]
+  },
+  {
+    "id": "intrahepatic-cholestasis-of-pregnancy",
+    "title": "Intrahepatic cholestasis of pregnancy",
+    "category": "Hepatobiliary",
+    "summary": "A pregnancy-related liver condition where itching is often the dominant symptom, commonly affecting the palms and soles and often worse at night, usually without a primary rash. It needs obstetric review because it can affect the pregnancy.",
+    "keywords": ["cholestasis", "ICP", "obstetric cholestasis", "itching", "palms and soles", "no rash", "bile acids"],
+    "symptomPatterns": [
+      "Intense itching, especially on hands and feet",
+      "Little or no primary rash despite severe itch",
+      "Itching worse at night",
+      "Dark urine, pale stool, or jaundice in some cases"
+    ],
+    "typicalTiming": [
+      "Often starts from around 28 weeks",
+      "Can begin earlier",
+      "May worsen as pregnancy progresses"
+    ],
+    "dangerSignals": [
+      "Worsening generalized itch with no rash",
+      "Jaundice",
+      "Dark urine or pale stool",
+      "Coexisting abdominal pain or reduced fetal movement"
+    ],
+    "differentiators": [
+      "Unlike pemphigoid gestationis or PUPPP, ICP usually does not start with obvious primary skin lesions",
+      "Palms and soles with nocturnal itching strongly raise concern",
+      "Normal-looking skin can still occur despite clinically important disease"
+    ],
+    "suggestedWorkup": [
+      "Liver function tests",
+      "Serum bile acids",
+      "Obstetric review and fetal monitoring per clinician judgment",
+      "Medication review and repeat labs if symptoms persist"
+    ],
+    "carePath": [
+      "Prompt obstetric evaluation is appropriate for suspected ICP",
+      "Do not dismiss severe itching in pregnancy when there is little or no rash",
+      "Urgent care is appropriate if there are other concerning symptoms such as jaundice or reduced fetal movement"
+    ],
+    "pregnancyImpact": [
+      "Associated with pregnancy risk and requires monitoring",
+      "Early recognition helps guide medication and delivery planning"
+    ],
+    "citations": [
+      {
+        "title": "Itching and intrahepatic cholestasis of pregnancy",
+        "url": "https://www.nhs.uk/pregnancy/related-conditions/complications/itching-and-intrahepatic-cholestasis/",
+        "publisher": "NHS"
+      },
+      {
+        "title": "Itching in pregnancy",
+        "url": "https://www.nhs.uk/pregnancy/complications/itching-and-intrahepatic-cholestasis/",
+        "publisher": "NHS"
+      }
+    ]
+  },
+  {
+    "id": "pemphigoid-gestationis",
+    "title": "Pemphigoid gestationis",
+    "category": "Pregnancy dermatoses",
+    "summary": "A rare autoimmune blistering disorder of pregnancy with intense itch, usually starting in the second or third trimester or shortly postpartum. It often begins around the umbilicus and can progress from urticarial plaques to vesicles and tense blisters.",
+    "keywords": ["pemphigoid gestationis", "herpes gestationis", "pregnancy blisters", "periumbilical rash", "autoimmune rash", "pregnancy rash"],
+    "symptomPatterns": [
+      "Intense itch that may precede the rash",
+      "Papules or urticarial plaques around the belly button",
+      "Progression to vesicles or tense blisters",
+      "Spread across abdomen and extremities with face and mucosa often spared"
+    ],
+    "typicalTiming": [
+      "Usually second or third trimester",
+      "Can occur in any trimester or postpartum",
+      "May flare around delivery and recur earlier in later pregnancies"
+    ],
+    "dangerSignals": [
+      "Rapid blistering eruption",
+      "Severe widespread itch with blister formation",
+      "Need for differentiation from other pregnancy dermatoses or drug eruptions",
+      "Any associated signs of infection, fever, or reduced fetal movement"
+    ],
+    "differentiators": [
+      "Periumbilical involvement is a classic clue and helps separate it from PUPPP, which often spares the umbilicus",
+      "Direct immunofluorescence is the key confirmatory test",
+      "Unlike ICP, there are primary skin lesions rather than isolated itch"
+    ],
+    "suggestedWorkup": [
+      "Dermatology or obstetric review",
+      "Skin biopsy with direct immunofluorescence",
+      "Consider BP180 antibody testing where available",
+      "Review for secondary infection and pregnancy monitoring needs"
+    ],
+    "carePath": [
+      "Prompt specialist assessment is appropriate when blistering or classic periumbilical lesions appear",
+      "Escalate urgently if rash is severe, rapidly progressive, or diagnosis is uncertain",
+      "Treatment commonly involves symptom control and corticosteroid-based plans directed by clinicians"
+    ],
+    "pregnancyImpact": [
+      "Some literature links pemphigoid gestationis with preterm birth and small-for-gestational-age infants",
+      "Maternal disease can recur in later pregnancies"
+    ],
+    "citations": [
+      {
+        "title": "Pemphigoid gestationis",
+        "url": "https://rarediseases.info.nih.gov/diseases/6497/pemphigoid-gestationis",
+        "publisher": "GARD"
+      },
+      {
+        "title": "Pemphigoid Gestationis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK470287/",
+        "publisher": "NCBI Bookshelf"
+      }
+    ]
+  },
+  {
+    "id": "puppp-polymorphic-eruption-of-pregnancy",
+    "title": "PUPPP / polymorphic eruption of pregnancy",
+    "category": "Pregnancy dermatoses",
+    "summary": "A common benign itchy rash of late pregnancy, also called polymorphic eruption of pregnancy, typically appearing in stretch marks in the third trimester. It is very uncomfortable but usually not linked to poor maternal or fetal outcomes.",
+    "keywords": ["PUPPP", "PEP", "polymorphic eruption of pregnancy", "itchy bumps in stretch marks", "third trimester rash"],
+    "symptomPatterns": [
+      "Intensely itchy papules and plaques",
+      "Often starts in abdominal stretch marks",
+      "Usually spares the umbilicus",
+      "Can spread to thighs, buttocks, and trunk"
+    ],
+    "typicalTiming": [
+      "Usually third trimester",
+      "Sometimes immediate postpartum",
+      "Often first pregnancy or multiple gestation"
+    ],
+    "dangerSignals": [
+      "Diagnostic uncertainty with blistering or umbilical involvement",
+      "Need to distinguish from pemphigoid gestationis or other dermatoses",
+      "Any systemic illness, fever, jaundice, or marked skin pain argues for a different process"
+    ],
+    "differentiators": [
+      "Usually spares the umbilicus, unlike pemphigoid gestationis",
+      "Primary lesions are papules and plaques rather than classic tense blisters",
+      "No primary rash is less consistent with PUPPP and should raise ICP or other alternatives"
+    ],
+    "suggestedWorkup": [
+      "Clinical skin examination",
+      "Consider biopsy or immunofluorescence if diagnosis is unclear",
+      "Review for cholestasis or blistering disorders if features are atypical"
+    ],
+    "carePath": [
+      "Symptom-focused care is common once more serious mimics are excluded",
+      "Specialist review is useful if there are blisters, severe spread, or uncertainty"
+    ],
+    "pregnancyImpact": [
+      "Usually self-limited and not associated with fetal harm",
+      "Main impact is maternal discomfort and sleep disruption"
+    ],
+    "citations": [
+      {
+        "title": "Pruritic Urticarial Papules and Plaques of Pregnancy",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK539700/",
+        "publisher": "NCBI Bookshelf"
+      },
+      {
+        "title": "Polymorphic eruption of pregnancy: review of literature",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27960565/",
+        "publisher": "PubMed"
+      }
+    ]
+  },
+  {
+    "id": "ectopic-pregnancy",
+    "title": "Ectopic pregnancy",
+    "category": "Bleeding and pain emergencies",
+    "summary": "A pregnancy located outside the uterus, usually in a fallopian tube. Early symptoms may include pelvic pain and vaginal bleeding, but rupture can cause internal bleeding and become a life-threatening emergency.",
+    "keywords": ["ectopic pregnancy", "one-sided pelvic pain", "shoulder pain", "vaginal bleeding", "fainting", "tubal pregnancy"],
+    "symptomPatterns": [
+      "Pelvic pain or lower abdominal pain, sometimes one-sided",
+      "Light vaginal bleeding or spotting",
+      "Shoulder pain, rectal pressure, dizziness, or fainting if rupturing",
+      "Pregnancy symptoms may still be present"
+    ],
+    "typicalTiming": [
+      "Usually early pregnancy",
+      "Often before an intrauterine pregnancy has been confirmed by ultrasound"
+    ],
+    "dangerSignals": [
+      "Shoulder pain",
+      "Fainting or severe dizziness",
+      "Severe sharp abdominal pain",
+      "Heavy bleeding",
+      "Signs of shock"
+    ],
+    "differentiators": [
+      "One-sided pain plus bleeding in early pregnancy is a major warning pattern",
+      "Threatened miscarriage may also bleed, but ectopic must be ruled out urgently",
+      "Pregnancy test and ultrasound are required for diagnosis"
+    ],
+    "suggestedWorkup": [
+      "Immediate pregnancy test if status is unknown",
+      "Quantitative hCG",
+      "Transvaginal ultrasound",
+      "Urgent obstetric or emergency assessment if symptoms are concerning"
+    ],
+    "carePath": [
+      "Emergency assessment is appropriate when rupture is possible",
+      "Do not wait at home if severe pain, fainting, or shoulder pain develops"
+    ],
+    "pregnancyImpact": [
+      "Cannot continue as a healthy pregnancy in the ectopic location",
+      "Delay in treatment can cause life-threatening bleeding"
+    ],
+    "citations": [
+      {
+        "title": "Ectopic Pregnancy",
+        "url": "https://medlineplus.gov/ectopicpregnancy.html",
+        "publisher": "MedlinePlus"
+      },
+      {
+        "title": "Ectopic pregnancy medical encyclopedia",
+        "url": "https://medlineplus.gov/ency/article/000895.htm",
+        "publisher": "MedlinePlus"
+      }
+    ]
+  },
+  {
+    "id": "threatened-miscarriage-or-early-pregnancy-loss",
+    "title": "Threatened miscarriage or early pregnancy loss",
+    "category": "Bleeding and pain emergencies",
+    "summary": "Vaginal bleeding with or without cramping in the first 20 weeks can represent threatened miscarriage or pregnancy loss, but not all bleeding means the pregnancy will be lost. Ectopic pregnancy and heavy-bleeding emergencies still have to be ruled out.",
+    "keywords": ["miscarriage", "threatened miscarriage", "bleeding in pregnancy", "cramping", "pregnancy loss"],
+    "symptomPatterns": [
+      "Vaginal bleeding or spotting in early pregnancy",
+      "Pelvic cramps or low back pain",
+      "Passing tissue or clots in some cases",
+      "Pregnancy symptoms may decrease, but this is not always reliable"
+    ],
+    "typicalTiming": [
+      "Before 20 weeks",
+      "Most losses occur early in pregnancy"
+    ],
+    "dangerSignals": [
+      "Heavy bleeding",
+      "Severe pain",
+      "Fever",
+      "Fainting",
+      "One-sided pain suggesting ectopic pregnancy"
+    ],
+    "differentiators": [
+      "Threatened miscarriage can still continue as a viable pregnancy",
+      "Ectopic pregnancy must be excluded when bleeding and pain coexist",
+      "Ultrasound and serial hCG often guide the distinction"
+    ],
+    "suggestedWorkup": [
+      "Focused obstetric history and bleeding amount",
+      "Ultrasound",
+      "Quantitative hCG",
+      "CBC if bleeding is significant",
+      "Blood type review when clinically appropriate"
+    ],
+    "carePath": [
+      "Same-day evaluation is reasonable for new bleeding in pregnancy",
+      "Emergency care is appropriate for heavy bleeding, fainting, severe pain, or fever"
+    ],
+    "pregnancyImpact": [
+      "Pregnancy loss is common and emotionally significant",
+      "Timely evaluation helps identify whether urgent treatment is needed"
+    ],
+    "citations": [
+      {
+        "title": "Miscarriage",
+        "url": "https://medlineplus.gov/miscarriage.html",
+        "publisher": "MedlinePlus"
+      },
+      {
+        "title": "Miscarriage - threatened medical encyclopedia",
+        "url": "https://medlineplus.gov/ency/article/000907.htm",
+        "publisher": "MedlinePlus"
+      }
+    ]
+  },
+  {
+    "id": "urinary-tract-infection-and-pyelonephritis",
+    "title": "Urinary tract infection and pyelonephritis in pregnancy",
+    "category": "Infectious complications",
+    "summary": "UTIs are common in pregnancy and can progress from lower urinary symptoms to kidney infection. Pregnancy increases the stakes because untreated infection can contribute to preterm birth and severe maternal complications.",
+    "keywords": ["UTI", "pyelonephritis", "burning urination", "frequency", "fever", "flank pain", "pregnancy infection"],
+    "symptomPatterns": [
+      "Burning with urination, frequency, urgency, or lower abdominal pressure",
+      "Cloudy, bloody, or foul-smelling urine",
+      "Back or flank pain, fever, shaking chills, nausea, or vomiting when kidney infection develops"
+    ],
+    "typicalTiming": [
+      "Can occur during any trimester and postpartum",
+      "Pyelonephritis often presents more abruptly with systemic illness"
+    ],
+    "dangerSignals": [
+      "Fever",
+      "Flank pain",
+      "Vomiting",
+      "Confusion",
+      "Shortness of breath",
+      "Signs of sepsis"
+    ],
+    "differentiators": [
+      "Lower UTI symptoms center on dysuria, urgency, and bladder discomfort",
+      "Fever, flank pain, vomiting, or systemic illness suggest pyelonephritis",
+      "Pregnancy makes asymptomatic bacteriuria clinically important because progression can occur"
+    ],
+    "suggestedWorkup": [
+      "Urinalysis",
+      "Urine culture",
+      "Vitals and hydration assessment",
+      "CBC and broader sepsis workup if ill appearing"
+    ],
+    "carePath": [
+      "Prompt clinician review is appropriate for urinary symptoms during pregnancy",
+      "Emergency or hospital-level care is appropriate if fever, flank pain, vomiting, or systemic illness appears"
+    ],
+    "pregnancyImpact": [
+      "Untreated infection can contribute to preterm birth and growth problems",
+      "Kidney infection can cause sepsis, blood clotting problems, and respiratory complications"
+    ],
+    "citations": [
+      {
+        "title": "Urinary Tract Infections (UTIs)",
+        "url": "https://www.acog.org/womens-health/faqs/urinary-tract-infections",
+        "publisher": "ACOG"
+      },
+      {
+        "title": "Urinary Tract Infections in Pregnant Individuals",
+        "url": "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals",
+        "publisher": "ACOG"
+      }
+    ]
+  },
+  {
+    "id": "deep-vein-thrombosis-and-pulmonary-embolism",
+    "title": "Deep vein thrombosis and pulmonary embolism in pregnancy",
+    "category": "Thromboembolic emergencies",
+    "summary": "Pregnancy and the postpartum period increase clot risk. One-sided leg swelling or pain raises concern for DVT, while sudden breathing difficulty, chest pain, or coughing blood raises concern for pulmonary embolism, which is an emergency.",
+    "keywords": ["DVT", "pulmonary embolism", "leg swelling", "chest pain", "shortness of breath", "blood clot", "pregnancy clot"],
+    "symptomPatterns": [
+      "Pain, swelling, tenderness, warmth, or redness in one leg",
+      "Sudden trouble breathing",
+      "Chest pain or tightness",
+      "Coughing blood or sudden collapse"
+    ],
+    "typicalTiming": [
+      "Can occur at any stage of pregnancy and up to 6 weeks postpartum",
+      "Risk is higher with thrombophilia, obesity, severe infection, surgery, or prior clot"
+    ],
+    "dangerSignals": [
+      "Sudden difficulty breathing",
+      "Chest pain or tightness",
+      "Coughing blood",
+      "One-sided leg swelling with pain"
+    ],
+    "differentiators": [
+      "Symmetric mild leg swelling in pregnancy is common, but one-sided painful swelling is concerning",
+      "Chest symptoms should not be dismissed as anxiety or reflux without evaluation when clot is possible"
+    ],
+    "suggestedWorkup": [
+      "Urgent clinical assessment",
+      "Imaging directed by clinician judgment",
+      "Oxygen saturation and vitals",
+      "Review clot risk factors"
+    ],
+    "carePath": [
+      "Possible pulmonary embolism requires emergency care immediately",
+      "Possible DVT requires same-day urgent assessment"
+    ],
+    "pregnancyImpact": [
+      "Pulmonary embolism can be fatal",
+      "Rapid recognition changes treatment and outcomes"
+    ],
+    "citations": [
+      {
+        "title": "Deep vein thrombosis in pregnancy",
+        "url": "https://www.nhs.uk/pregnancy/complications/deep-vein-thrombosis/",
+        "publisher": "NHS"
+      }
+    ]
+  },
+  {
+    "id": "acute-fatty-liver-of-pregnancy",
+    "title": "Acute fatty liver of pregnancy",
+    "category": "Hepatobiliary",
+    "summary": "A rare but serious third-trimester liver emergency that can present with nausea, vomiting, abdominal pain, malaise, jaundice, and rapidly progressive liver dysfunction. It can overlap clinically with preeclampsia or HELLP.",
+    "keywords": ["acute fatty liver of pregnancy", "AFLP", "jaundice", "third trimester liver failure", "nausea vomiting upper abdominal pain"],
+    "symptomPatterns": [
+      "Third-trimester nausea and vomiting",
+      "Upper abdominal or right-sided abdominal pain",
+      "Malaise, headache, jaundice, confusion, or worsening illness",
+      "Possible overlap with hypertension or proteinuria"
+    ],
+    "typicalTiming": [
+      "Usually between 30 and 38 weeks",
+      "Often presents late and can worsen quickly"
+    ],
+    "dangerSignals": [
+      "Jaundice",
+      "Confusion",
+      "Severe vomiting",
+      "Rapid clinical decline",
+      "Coagulopathy or bleeding"
+    ],
+    "differentiators": [
+      "May mimic HELLP or preeclampsia but liver failure features become prominent",
+      "Needs urgent lab evaluation and obstetric management"
+    ],
+    "suggestedWorkup": [
+      "CBC",
+      "Liver enzymes and bilirubin",
+      "Creatinine and glucose",
+      "Coagulation studies",
+      "Urine protein and obstetric review"
+    ],
+    "carePath": [
+      "Emergency hospital assessment is appropriate",
+      "Do not treat progressive jaundice or confusion in late pregnancy as routine"
+    ],
+    "pregnancyImpact": [
+      "Can progress to acute liver failure and multi-organ dysfunction",
+      "Requires rapid maternal stabilization and obstetric planning"
+    ],
+    "citations": [
+      {
+        "title": "Acute fatty liver of pregnancy",
+        "url": "https://rarediseases.info.nih.gov/diseases/9578/acute-fatty-liver-of-pregnancy",
+        "publisher": "GARD"
+      },
+      {
+        "title": "Fatty Liver in Pregnancy",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/n/statpearls/article-21646/",
+        "publisher": "NCBI Bookshelf"
+      }
+    ]
+  }
+]

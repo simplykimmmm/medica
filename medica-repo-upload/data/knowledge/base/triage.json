@@ -1,0 +1,224 @@
+[
+  {
+    "id": "pregnancy-rash-pruritus-differential",
+    "title": "Pregnancy itch and rash differential primer",
+    "category": "Clinical pathways",
+    "summary": "Use itch distribution and lesion type to separate important pregnancy skin conditions. Itch without a primary rash points toward cholestasis; periumbilical plaques or blisters point toward pemphigoid gestationis; stretch-mark-centered plaques with umbilical sparing fit PUPPP more closely.",
+    "keywords": ["pregnancy itch", "rash differential", "pemphigoid gestationis", "cholestasis", "PUPPP", "umbilicus", "blisters"],
+    "symptomPatterns": [
+      "Itching without rash raises cholestasis concern",
+      "Periumbilical itch and evolving blisters raise pemphigoid gestationis concern",
+      "Stretch-mark-centered rash with umbilical sparing suggests PUPPP"
+    ],
+    "typicalTiming": [
+      "Cholestasis often later pregnancy",
+      "Pemphigoid gestationis often second or third trimester or postpartum",
+      "PUPPP usually third trimester"
+    ],
+    "dangerSignals": [
+      "Nocturnal palms and soles itch without rash",
+      "Rapid blistering",
+      "Jaundice",
+      "Reduced fetal movement",
+      "Fever or skin pain"
+    ],
+    "differentiators": [
+      "Umbilical involvement favors pemphigoid gestationis",
+      "Umbilical sparing favors PUPPP",
+      "No primary rash favors cholestasis over inflammatory dermatoses"
+    ],
+    "suggestedWorkup": [
+      "Ask where the itch started and whether there are true blisters",
+      "Inspect palms, soles, abdomen, and stretch marks",
+      "Check liver tests and bile acids if there is itch without rash",
+      "Consider biopsy with direct immunofluorescence for blistering patterns"
+    ],
+    "carePath": [
+      "Pregnancy rash with blisters or significant diagnostic uncertainty should prompt specialist review",
+      "Isolated severe itch still needs prompt obstetric evaluation because the skin can look relatively normal in cholestasis"
+    ],
+    "pregnancyImpact": [
+      "The same complaint of 'itching' can represent either a mostly benign dermatosis or a condition with fetal implications"
+    ],
+    "citations": [
+      {
+        "title": "Itching and intrahepatic cholestasis of pregnancy",
+        "url": "https://www.nhs.uk/pregnancy/related-conditions/complications/itching-and-intrahepatic-cholestasis/",
+        "publisher": "NHS"
+      },
+      {
+        "title": "Pemphigoid Gestationis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK470287/",
+        "publisher": "NCBI Bookshelf"
+      },
+      {
+        "title": "Pruritic Urticarial Papules and Plaques of Pregnancy",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK539700/",
+        "publisher": "NCBI Bookshelf"
+      }
+    ]
+  },
+  {
+    "id": "pregnancy-bleeding-and-pain-triage",
+    "title": "Pregnancy bleeding and abdominal pain triage",
+    "category": "Clinical pathways",
+    "summary": "Early pregnancy bleeding and pain should be treated carefully because miscarriage, ectopic pregnancy, and other urgent conditions can look similar at first. One-sided pain, shoulder pain, fainting, or heavy bleeding push the pattern toward emergency assessment.",
+    "keywords": ["bleeding", "abdominal pain", "ectopic", "miscarriage", "pregnancy emergency", "fainting", "shoulder pain"],
+    "symptomPatterns": [
+      "Spotting or bleeding in pregnancy",
+      "Cramping or lower abdominal pain",
+      "One-sided pelvic pain, shoulder pain, or collapse suggest ectopic rupture"
+    ],
+    "typicalTiming": [
+      "Early pregnancy is the highest concern window for ectopic pregnancy and miscarriage",
+      "Any trimester bleeding still requires context-specific assessment"
+    ],
+    "dangerSignals": [
+      "Heavy bleeding",
+      "Fainting",
+      "Severe abdominal pain",
+      "Shoulder pain",
+      "Signs of shock"
+    ],
+    "differentiators": [
+      "Bleeding alone does not confirm miscarriage",
+      "Pain plus bleeding does not rule out ectopic pregnancy",
+      "Imaging and hCG trends are central to sorting the differential"
+    ],
+    "suggestedWorkup": [
+      "Bleeding amount and pad count",
+      "Ultrasound",
+      "Quantitative hCG",
+      "Vitals and CBC if symptoms are significant"
+    ],
+    "carePath": [
+      "Emergency evaluation is appropriate if rupture, shock, or heavy bleeding is possible",
+      "Same-day clinical assessment is appropriate for new pregnancy bleeding even when symptoms seem modest"
+    ],
+    "pregnancyImpact": [
+      "Rapid differentiation can be lifesaving in ectopic pregnancy"
+    ],
+    "citations": [
+      {
+        "title": "Ectopic Pregnancy",
+        "url": "https://medlineplus.gov/ectopicpregnancy.html",
+        "publisher": "MedlinePlus"
+      },
+      {
+        "title": "Miscarriage",
+        "url": "https://medlineplus.gov/miscarriage.html",
+        "publisher": "MedlinePlus"
+      }
+    ]
+  },
+  {
+    "id": "pregnancy-diagnostic-workup-primer",
+    "title": "Pregnancy diagnostic workup primer",
+    "category": "Clinical pathways",
+    "summary": "Common pregnancy symptom patterns often narrow through structured context: gestational age, blood pressure, temperature, rash morphology, hydration status, bleeding amount, fetal movement, urinalysis, liver tests, and pregnancy-safe imaging.",
+    "keywords": ["pregnancy workup", "blood pressure", "urinalysis", "bile acids", "skin biopsy", "ultrasound", "fetal movement"],
+    "symptomPatterns": [
+      "Headache or vision change shifts attention to blood pressure disorders",
+      "Itch without rash shifts attention to liver testing",
+      "Blistering rash shifts attention to skin exam and possible biopsy",
+      "Vomiting with dehydration shifts attention to urine ketones and electrolytes"
+    ],
+    "typicalTiming": [
+      "Gestational age is one of the strongest context clues in pregnancy medicine"
+    ],
+    "dangerSignals": [
+      "Severe hypertension",
+      "Fever",
+      "Reduced fetal movement",
+      "Heavy bleeding",
+      "Shortness of breath",
+      "Confusion"
+    ],
+    "differentiators": [
+      "The same symptom has different implications at 8 weeks versus 32 weeks",
+      "Basic structured vitals often separate routine from urgent patterns"
+    ],
+    "suggestedWorkup": [
+      "Gestational age and trimester",
+      "Vital signs",
+      "Urinalysis and urine culture when infection or proteinuria is possible",
+      "CBC, renal function, liver tests, bile acids, or glucose depending on pattern",
+      "Ultrasound and fetal monitoring when clinically appropriate"
+    ],
+    "carePath": [
+      "Use structured data to support triage, not to replace clinician assessment"
+    ],
+    "pregnancyImpact": [
+      "Strong intake structure improves safety and grounded differential generation"
+    ],
+    "citations": [
+      {
+        "title": "What are the symptoms of preeclampsia, eclampsia, & HELLP syndrome?",
+        "url": "https://www.nichd.nih.gov/health/topics/preeclampsia/conditioninfo/symptoms",
+        "publisher": "NICHD"
+      },
+      {
+        "title": "Urinary Tract Infections in Pregnant Individuals",
+        "url": "https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals",
+        "publisher": "ACOG"
+      }
+    ]
+  },
+  {
+    "id": "pregnancy-emergency-red-flags",
+    "title": "Pregnancy emergency red flags",
+    "category": "Clinical pathways",
+    "summary": "A symptom-checking tool should elevate certain pregnancy patterns immediately: severe headache with vision change, severe blood pressure elevation, chest pain, major breathing difficulty, seizure, heavy bleeding, shoulder pain with fainting, severe dehydration, high fever, one-sided leg swelling, and reduced fetal movement.",
+    "keywords": ["pregnancy emergency", "red flags", "heavy bleeding", "severe headache", "vision changes", "breathing difficulty", "reduced fetal movement"],
+    "symptomPatterns": [
+      "Neurologic symptoms with hypertension",
+      "Chest symptoms or unexplained shortness of breath",
+      "Major bleeding or collapse",
+      "Late-pregnancy reduced fetal movement",
+      "High fever with flank pain or systemic illness"
+    ],
+    "typicalTiming": [
+      "Emergency patterns can occur in any trimester or postpartum"
+    ],
+    "dangerSignals": [
+      "Seizure",
+      "Fainting",
+      "Heavy bleeding",
+      "Severe headache with vision changes",
+      "Chest pain",
+      "Sudden trouble breathing",
+      "Coughing blood",
+      "One-sided painful leg swelling",
+      "Reduced fetal movement"
+    ],
+    "differentiators": [
+      "These features should override routine reassurance from otherwise mild symptom descriptions"
+    ],
+    "suggestedWorkup": [
+      "Immediate clinician or emergency evaluation rather than delayed self-monitoring"
+    ],
+    "carePath": [
+      "The app should advise emergency services or obstetric triage when these patterns appear"
+    ],
+    "pregnancyImpact": [
+      "Fast recognition changes maternal and fetal outcomes"
+    ],
+    "citations": [
+      {
+        "title": "Deep vein thrombosis in pregnancy",
+        "url": "https://www.nhs.uk/pregnancy/complications/deep-vein-thrombosis/",
+        "publisher": "NHS"
+      },
+      {
+        "title": "What are the symptoms of preeclampsia, eclampsia, & HELLP syndrome?",
+        "url": "https://www.nichd.nih.gov/health/topics/preeclampsia/conditioninfo/symptoms",
+        "publisher": "NICHD"
+      },
+      {
+        "title": "Severe vomiting in pregnancy",
+        "url": "https://www.nhs.uk/pregnancy/related-conditions/complications/severe-vomiting/",
+        "publisher": "NHS"
+      }
+    ]
+  }
+]
