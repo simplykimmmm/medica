@@ -38,14 +38,6 @@ This project is designed as differential and triage support, not as a definitive
 
 ## AI provider configuration
 
-### Fast local testing from the browser
-
-The app includes a "Browser settings" panel for live model configuration during local testing.
-
-- Paste an API key into the running app
-- Optionally change base URL, provider name, and model
-- The values are stored only in your local browser storage, not committed to the repo
-
 ### Option A: OpenAI API
 
 Set `OPENAI_API_KEY` in `.env.local`.
@@ -64,6 +56,16 @@ Set:
 - `AI_PROVIDER_NAME`
 
 This lets you plug in OpenRouter, Groq, or another OpenAI-compatible endpoint later without changing app code.
+
+### Option C: Google AI Studio
+
+Set `AI_API_KEY` in `.env.local`.
+
+If you do only that, the app automatically uses:
+
+- Google AI Studio
+- `https://generativelanguage.googleapis.com/v1beta/openai/`
+- `gemini-2.5-flash`
 
 ## Important note about ChatGPT subscriptions
 

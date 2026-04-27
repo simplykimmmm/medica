@@ -3,6 +3,9 @@ import { getSupplementalSystemPrompt } from "@/lib/knowledge";
 import type { ChatTurn, KnowledgeDoc, LanguageCode, PatientContext } from "@/lib/types";
 
 const DEFAULT_OPENAI_BASE_URL = "https://api.openai.com/v1";
+const DEFAULT_GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/";
+const DEFAULT_GEMINI_MODEL = "gemini-2.5-flash";
+const DEFAULT_GEMINI_PROVIDER = "Google AI Studio";
 
 type ProviderOverride = {
   apiKey?: string;
@@ -13,12 +16,19 @@ type ProviderOverride = {
 
 export function resolveProviderConfig(override?: ProviderOverride) {
   const apiKey = override?.apiKey?.trim() || process.env.AI_API_KEY || process.env.OPENAI_API_KEY || "";
-  const baseUrl = override?.baseUrl?.trim() || process.env.AI_BASE_URL?.trim() || DEFAULT_OPENAI_BASE_URL;
-  const model = override?.model?.trim() || process.env.AI_MODEL?.trim() || "gpt-5-mini";
+  const useGeminiDefaults = Boolean(process.env.AI_API_KEY?.trim()) && !override?.baseUrl?.trim() && !process.env.AI_BASE_URL?.trim();
+  const baseUrl =
+    override?.baseUrl?.trim() ||
+    process.env.AI_BASE_URL?.trim() ||
+    (useGeminiDefaults ? DEFAULT_GEMINI_BASE_URL : DEFAULT_OPENAI_BASE_URL);
+  const model =
+    override?.model?.trim() ||
+    process.env.AI_MODEL?.trim() ||
+    (useGeminiDefaults ? DEFAULT_GEMINI_MODEL : "gpt-5-mini");
   const provider =
     override?.provider?.trim() ||
     process.env.AI_PROVIDER_NAME?.trim() ||
-    (process.env.AI_BASE_URL?.trim() ? "OpenAI-compatible API" : "OpenAI");
+    (useGeminiDefaults ? DEFAULT_GEMINI_PROVIDER : process.env.AI_BASE_URL?.trim() ? "OpenAI-compatible API" : "OpenAI");
 
   return { apiKey, baseUrl, model, provider };
 }

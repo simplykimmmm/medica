@@ -31,13 +31,6 @@ type FormState = {
   notes: string;
 };
 
-type BrowserProviderSettings = {
-  apiKey: string;
-  baseUrl: string;
-  model: string;
-  provider: string;
-};
-
 const EMPTY_FORM: FormState = {
   age: "",
   gestationalAgeWeeks: "",
@@ -49,14 +42,6 @@ const EMPTY_FORM: FormState = {
   meds: "",
   knownConditions: "",
   notes: "",
-};
-
-const BROWSER_SETTINGS_STORAGE_KEY = "medica.browser-provider-settings.v1";
-const EMPTY_BROWSER_SETTINGS: BrowserProviderSettings = {
-  apiKey: "",
-  baseUrl: "",
-  model: "",
-  provider: "",
 };
 
 function createMessage(role: ChatRole, content: string, meta?: ClientMessage["meta"]): ClientMessage {
@@ -89,71 +74,8 @@ export function ChatShell({
   const [isLoading, setIsLoading] = useState(false);
   const [isTranslatingReplies, setIsTranslatingReplies] = useState(false);
   const [translationFailed, setTranslationFailed] = useState(false);
-  const [browserSettings, setBrowserSettings] = useState<BrowserProviderSettings>(EMPTY_BROWSER_SETTINGS);
-  const [settingsLoaded, setSettingsLoaded] = useState(false);
 
   const ui = getUIStrings(selectedLanguage);
-  const browserLiveReady = Boolean(browserSettings.apiKey.trim());
-  const effectiveLiveReady = liveModelReady || browserLiveReady;
-  const configuredProviderLabel = browserSettings.provider.trim() || "OpenAI";
-  const browserSettingsNote = browserLiveReady
-    ? `Browser live AI is enabled with ${configuredProviderLabel}${browserSettings.model.trim() ? ` using ${browserSettings.model.trim()}` : ""}.`
-    : liveModelReady
-      ? "A server-side live AI key is available for this workspace."
-      : "Paste a live API key here to enable real model responses in this browser. These values stay in local browser storage only.";
-
-  useEffect(() => {
-    try {
-      const rawSettings = window.localStorage.getItem(BROWSER_SETTINGS_STORAGE_KEY);
-
-      if (rawSettings) {
-        const parsed = JSON.parse(rawSettings) as Partial<BrowserProviderSettings>;
-
-        setBrowserSettings({
-          apiKey: typeof parsed.apiKey === "string" ? parsed.apiKey : "",
-          baseUrl: typeof parsed.baseUrl === "string" ? parsed.baseUrl : "",
-          model: typeof parsed.model === "string" ? parsed.model : "",
-          provider: typeof parsed.provider === "string" ? parsed.provider : "",
-        });
-      }
-    } catch {
-      window.localStorage.removeItem(BROWSER_SETTINGS_STORAGE_KEY);
-    } finally {
-      setSettingsLoaded(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!settingsLoaded) {
-      return;
-    }
-
-    window.localStorage.setItem(BROWSER_SETTINGS_STORAGE_KEY, JSON.stringify(browserSettings));
-  }, [browserSettings, settingsLoaded]);
-
-  function buildProviderHeaders() {
-    const headers: Record<string, string> = {
-      "Content-Type": "application/json",
-    };
-
-    if (browserSettings.apiKey.trim()) {
-      headers["x-ai-api-key"] = browserSettings.apiKey.trim();
-    }
-
-    if (browserSettings.baseUrl.trim()) {
-      headers["x-ai-base-url"] = browserSettings.baseUrl.trim();
-    }
-
-    if (browserSettings.model.trim()) {
-      headers["x-ai-model"] = browserSettings.model.trim();
-    }
-
-    if (browserSettings.provider.trim()) {
-      headers["x-ai-provider-name"] = browserSettings.provider.trim();
-    }
-
-    return headers;
-  }
 
   useEffect(() => {
     let cancelled = false;
@@ -215,7 +137,9 @@ export function ChatShell({
       needsTranslation.map(async (message) => {
         const response = await fetch("/api/translate", {
           method: "POST",
-          headers: buildProviderHeaders(),
+          headers: {
+            "Content-Type": "application/json",
+          },
           body: JSON.stringify({
             text: message.sourceContent,
             sourceLanguage: message.sourceLanguage,
@@ -297,7 +221,9 @@ export function ChatShell({
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
-        headers: buildProviderHeaders(),
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           messages: nextMessages.map((message) => ({
             role: message.role,
@@ -373,8 +299,8 @@ export function ChatShell({
               {knowledgeSnapshot.uploadedDocs} {ui.specialistReferencesAdded}
             </span>
             <span className="pill">{ui.pregnancyFocusedGuidance}</span>
-            <span className={`pill ${effectiveLiveReady ? "pill-active" : ""}`}>
-              {effectiveLiveReady ? "Live AI ready" : "Local grounded mode"}
+            <span className={`pill ${liveModelReady ? "pill-active" : ""}`}>
+              {liveModelReady ? "Live AI ready" : "Local grounded mode"}
             </span>
           </div>
         </div>
@@ -475,55 +401,6 @@ export function ChatShell({
         </main>
 
         <aside className="chatbot-sidebar">
-          <section className="side-card">
-            <p className="eyebrow">Browser settings</p>
-            <h2>Live AI provider</h2>
-            <p className="settings-note">{browserSettingsNote}</p>
-
-            <div className="side-form-grid compact-side-grid">
-              <label className="field-span-2">
-                <span className="mini-label">API key</span>
-                <input
-                  autoComplete="off"
-                  onChange={(event) => setBrowserSettings((current) => ({ ...current, apiKey: event.target.value }))}
-                  placeholder="sk-..."
-                  type="password"
-                  value={browserSettings.apiKey}
-                />
-              </label>
-              <label className="field-span-2">
-                <span className="mini-label">Base URL</span>
-                <input
-                  onChange={(event) => setBrowserSettings((current) => ({ ...current, baseUrl: event.target.value }))}
-                  placeholder="https://api.openai.com/v1"
-                  value={browserSettings.baseUrl}
-                />
-              </label>
-              <label>
-                <span className="mini-label">Model</span>
-                <input
-                  onChange={(event) => setBrowserSettings((current) => ({ ...current, model: event.target.value }))}
-                  placeholder="gpt-5-mini"
-                  value={browserSettings.model}
-                />
-              </label>
-              <label>
-                <span className="mini-label">Provider name</span>
-                <input
-                  onChange={(event) => setBrowserSettings((current) => ({ ...current, provider: event.target.value }))}
-                  placeholder="OpenAI"
-                  value={browserSettings.provider}
-                />
-              </label>
-            </div>
-
-            <div className="sidebar-action-row">
-              <button className="secondary-button" onClick={() => setBrowserSettings(EMPTY_BROWSER_SETTINGS)} type="button">
-                Clear live AI settings
-              </button>
-            </div>
-          </section>
-
           <section className="side-card side-card-highlight">
             <p className="eyebrow">{ui.optionalIntake}</p>
             <h2>{ui.healthDetails}</h2>
