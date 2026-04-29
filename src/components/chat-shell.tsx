@@ -219,7 +219,7 @@ export function ChatShell({
     setIsLoading(true);
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await fetch("/api/gemini", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
